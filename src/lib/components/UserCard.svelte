@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { IUser } from '../services/service'
+	import type { IUser } from '@services/service'
 	import { fade } from 'svelte/transition'
-	import Card from './Card.svelte'
+	import Card from '@components/Card.svelte'
 
 	export let user: IUser
 </script>

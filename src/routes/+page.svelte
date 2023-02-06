@@ -1,7 +1,7 @@
 <script lang="ts">
-	import User from '../services/service'
-	import UserCard from '../components/UserCard.svelte'
-	import BaseButton from '../components/Base/BaseButton.svelte'
+	import User from '@services/service'
+	import UserCard from '@components/UserCard.svelte'
+	import BaseButton from '@components/Base/BaseButton.svelte'
 	import { fade } from 'svelte/transition'
 
 	let users = User.index()
