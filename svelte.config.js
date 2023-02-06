@@ -20,7 +20,8 @@ const config = {
             '@templates': './src/lib/templates',
             '@utils': './src/lib/utils',
             '@services': './src/services',
-            '@types': './src/types',
+            '@interfaces': './src/interfaces',
+            '@validation': './src/validation',
             '@styles': './src/styles'
         }
 	}

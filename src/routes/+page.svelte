@@ -1,5 +1,5 @@
 <script lang="ts">
-	import User from '@services/service'
+	import User from '@services/UserService'
 	import UserCard from '@components/UserCard.svelte'
 	import BaseButton from '@components/Base/BaseButton.svelte'
 	import { fade } from 'svelte/transition'
