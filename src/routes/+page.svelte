@@ -8,22 +8,29 @@
 </script>
 
 <div class="text-center py-5 grid">
-	<h1 class="text-3xl font-bold">Welcome to SvelteKit</h1>
+	<h1 class="text-3xl font-bold">Welcome to Users</h1>
 	<p>
 		Visit
 		<a
 			class="text-blue-400"
-			href="https://kit.svelte.dev"
+			href="/users/hello-world"
 		>
-			kit.svelte.dev
+			Hello World
 		</a>
-		to read the documentation
+		to read other users data,
+		or see our
+		<a
+			class="text-blue-400"
+			href="/users/joao"
+		>
+			404
+		</a> page
 	</p>
 	<BaseButton
 		on:click={() => (users = User.index())}
 		classes="w-44 my-5 mx-auto"
 	>
-		Request new User
+		Request new Users
 	</BaseButton>
 
 	{#await users}
