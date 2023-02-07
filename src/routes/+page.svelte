@@ -42,7 +42,7 @@
 	</BaseButton>
 	<BaseInput
 		bind:value={search}
-		classes="w-44 mx-auto"
+		classes="w-44 mx-auto mb-5"
 		placeholder="Search"
 	/>
 
@@ -54,13 +54,11 @@
 			Loading...
 		</p>
 	{:then}
-		{#if filteredPeople?.length}
-			<div class="grid grid-cols-5 gap-3 w-full">
-				{#each filteredPeople as user (user.id.name + user.registered.date)}
-					<UserCard {user} />
-				{/each}
-			</div>
-		{/if}
+		<div class="flex flex-wrap justify-center gap-3 w-full">
+			{#each filteredPeople as user (user.id.name + user.registered.date)}
+				<UserCard {user} />
+			{/each}
+		</div>
 	{:catch err}
 		<p transition:fade>{err}</p>
 	{/await}
