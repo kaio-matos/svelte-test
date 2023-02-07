@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IUser } from '@services/service'
+	import type { IUser } from '@interfaces/User'
 	import { fade } from 'svelte/transition'
 	import Card from '@components/Card.svelte'
 
